@@ -1,0 +1,52 @@
+[
+  {
+    "tag_name": "entity",
+    "ids_to_tags": {
+      "1": "B-doctor_name",
+      "2": "I-doctor_name",
+      "3": "L-doctor_name",
+      "4": "U-doctor_name",
+      "5": "B-phone_number",
+      "6": "I-phone_number",
+      "7": "L-phone_number",
+      "8": "U-phone_number",
+      "9": "B-schedule_date",
+      "10": "I-schedule_date",
+      "11": "L-schedule_date",
+      "12": "U-schedule_date",
+      "13": "B-schedule_time",
+      "14": "I-schedule_time",
+      "15": "L-schedule_time",
+      "16": "U-schedule_time",
+      "17": "B-type_of_disease",
+      "18": "I-type_of_disease",
+      "19": "L-type_of_disease",
+      "20": "U-type_of_disease",
+      "0": "O"
+    },
+    "tags_to_ids": {
+      "B-doctor_name": 1,
+      "I-doctor_name": 2,
+      "L-doctor_name": 3,
+      "U-doctor_name": 4,
+      "B-phone_number": 5,
+      "I-phone_number": 6,
+      "L-phone_number": 7,
+      "U-phone_number": 8,
+      "B-schedule_date": 9,
+      "I-schedule_date": 10,
+      "L-schedule_date": 11,
+      "U-schedule_date": 12,
+      "B-schedule_time": 13,
+      "I-schedule_time": 14,
+      "L-schedule_time": 15,
+      "U-schedule_time": 16,
+      "B-type_of_disease": 17,
+      "I-type_of_disease": 18,
+      "L-type_of_disease": 19,
+      "U-type_of_disease": 20,
+      "O": 0
+    },
+    "num_tags": 21
+  }
+]

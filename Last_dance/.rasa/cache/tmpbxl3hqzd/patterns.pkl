@@ -1,0 +1,6 @@
+[
+  {
+    "name": "doctor_name",
+    "pattern": "(\\bDr\\.\\ Linh\\ Tran\\b|\\bDr\\.\\ Minh\\ Vu\\b|\\bDr\\.\\ An\\ Nguyen\\b|\\bDr\\.\\ Bao\\ Le\\b|\\bLinh\\ Tran\\b|\\bMinh\\ Vu\\b|\\bAn\\ Nguyen\\b|\\bBao\\ Le\\b)"
+  }
+]

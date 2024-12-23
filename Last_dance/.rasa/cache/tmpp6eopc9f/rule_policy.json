@@ -1,0 +1,53 @@
+{
+  "lookup": {
+    "rules": {
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"book_appointment\"}}]": "simple_healthcare_form",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"book_appointment\"}}, {\"active_loop\": {\"name\": \"simple_healthcare_form\"}, \"prev_action\": {\"action_name\": \"simple_healthcare_form\"}, \"user\": {\"intent\": \"book_appointment\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"working_hour_qa_harmony_ent\"}}]": "action_working_hour_qa_harmony_ent",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"working_hour_qa_harmony_ent\"}}, {\"prev_action\": {\"action_name\": \"action_working_hour_qa_harmony_ent\"}, \"user\": {\"intent\": \"working_hour_qa_harmony_ent\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"doctor_info_qa_harmony_ent\"}}]": "action_doctor_info_qa_harmony_ent",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"doctor_info_qa_harmony_ent\"}}, {\"prev_action\": {\"action_name\": \"action_doctor_info_qa_harmony_ent\"}, \"user\": {\"intent\": \"doctor_info_qa_harmony_ent\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"bot_challenge\"}}]": "utter_iamabot",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"bot_challenge\"}}, {\"prev_action\": {\"action_name\": \"utter_iamabot\"}, \"user\": {\"intent\": \"bot_challenge\"}}]": "action_listen",
+      "[{\"active_loop\": {\"name\": \"should_not_be_set\"}, \"prev_action\": {\"action_name\": \"simple_healthcare_form\"}}]": "utter_submit",
+      "[{\"active_loop\": {\"name\": \"should_not_be_set\"}, \"prev_action\": {\"action_name\": \"simple_healthcare_form\"}}, {\"active_loop\": {\"name\": \"should_not_be_set\"}, \"prev_action\": {\"action_name\": \"utter_submit\"}}]": "action_ingest_booking_data",
+      "[{\"active_loop\": {\"name\": \"should_not_be_set\"}, \"prev_action\": {\"action_name\": \"simple_healthcare_form\"}}, {\"active_loop\": {\"name\": \"should_not_be_set\"}, \"prev_action\": {\"action_name\": \"utter_submit\"}}, {\"active_loop\": {\"name\": \"should_not_be_set\"}, \"prev_action\": {\"action_name\": \"action_ingest_booking_data\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"goodbye\"}}]": "utter_goodbye",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"goodbye\"}}, {\"prev_action\": {\"action_name\": \"utter_goodbye\"}, \"user\": {\"intent\": \"goodbye\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"general_qa_harmony_ent\"}}]": "action_general_info_qa_harmony_ent",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"general_qa_harmony_ent\"}}, {\"prev_action\": {\"action_name\": \"action_general_info_qa_harmony_ent\"}, \"user\": {\"intent\": \"general_qa_harmony_ent\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"service_info_qa_harmony_ent\"}}]": "action_service_info_qa_harmony_ent",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"service_info_qa_harmony_ent\"}}, {\"prev_action\": {\"action_name\": \"action_service_info_qa_harmony_ent\"}, \"user\": {\"intent\": \"service_info_qa_harmony_ent\"}}]": "action_listen"
+    },
+    "rule_only_slots": [],
+    "rule_only_loops": [
+      "simple_healthcare_form"
+    ],
+    "rules_for_loop_unhappy_path": {
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}}, {\"active_loop\": {\"name\": \"simple_healthcare_form\"}, \"prev_action\": {\"action_name\": \"simple_healthcare_form\"}, \"user\": {\"intent\": \"book_appointment\"}}]": "do_not_predict_loop_action"
+    },
+    "rules_not_in_stories": [
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"working_hour_qa_harmony_ent\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"doctor_info_qa_harmony_ent\"}}, {\"prev_action\": {\"action_name\": \"action_doctor_info_qa_harmony_ent\"}, \"user\": {\"intent\": \"doctor_info_qa_harmony_ent\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"general_qa_harmony_ent\"}}, {\"prev_action\": {\"action_name\": \"action_general_info_qa_harmony_ent\"}, \"user\": {\"intent\": \"general_qa_harmony_ent\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"bot_challenge\"}}, {\"prev_action\": {\"action_name\": \"utter_iamabot\"}, \"user\": {\"intent\": \"bot_challenge\"}}]",
+      "predicting default action with intent restart",
+      "[{\"active_loop\": {\"name\": \"should_not_be_set\"}, \"prev_action\": {\"action_name\": \"simple_healthcare_form\"}}, {\"active_loop\": {\"name\": \"should_not_be_set\"}, \"prev_action\": {\"action_name\": \"utter_submit\"}}, {\"active_loop\": {\"name\": \"should_not_be_set\"}, \"prev_action\": {\"action_name\": \"action_ingest_booking_data\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"bot_challenge\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"general_qa_harmony_ent\"}}]",
+      "predicting default action with intent session_start",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"goodbye\"}}]",
+      "[{\"active_loop\": {\"name\": \"should_not_be_set\"}, \"prev_action\": {\"action_name\": \"simple_healthcare_form\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"working_hour_qa_harmony_ent\"}}, {\"prev_action\": {\"action_name\": \"action_working_hour_qa_harmony_ent\"}, \"user\": {\"intent\": \"working_hour_qa_harmony_ent\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"doctor_info_qa_harmony_ent\"}}]",
+      "predicting default action with intent back",
+      "[{\"active_loop\": {\"name\": \"should_not_be_set\"}, \"prev_action\": {\"action_name\": \"simple_healthcare_form\"}}, {\"active_loop\": {\"name\": \"should_not_be_set\"}, \"prev_action\": {\"action_name\": \"utter_submit\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"book_appointment\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"service_info_qa_harmony_ent\"}}]",
+      "handling active loops and forms - simple_healthcare_form",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"goodbye\"}}, {\"prev_action\": {\"action_name\": \"utter_goodbye\"}, \"user\": {\"intent\": \"goodbye\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"service_info_qa_harmony_ent\"}}, {\"prev_action\": {\"action_name\": \"action_service_info_qa_harmony_ent\"}, \"user\": {\"intent\": \"service_info_qa_harmony_ent\"}}]",
+      "handling active loops and forms - simple_healthcare_form - action_listen"
+    ]
+  }
+}
